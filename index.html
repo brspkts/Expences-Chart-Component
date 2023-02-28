@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <main class="main-container">
+    <div class="box1">
+      <div class="box1-chd">
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+        <div class="circle">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="box2-chd">
+        <div>
+          <h1>Spending - Last 7 days</h1>
+        </div>
+        <div class="box2-middle">
+          <div>
+            <div class="chart1 chart"></div>
+            <p>mon</p>
+          </div>
+          <div>
+            <div class="chart2 chart"></div>
+            <p>tue</p>
+          </div>
+          <div class="active-chart" >
+            <div class="price price1" id="price1"><p>$52.36</p></div>
+            <div class="chart3 chart" onclick="showSpend1()"></div>
+            <p>wed</p>
+          </div>
+          <div class="active-chart">
+            <div class="price price2" id="price2"><p id="price2">$31.07</p></div>
+            <div class="chart4 chart" onclick="showSpend2()"></div>
+            <p>thu</p>
+          </div>
+          <div>
+            <div class="chart5 chart"></div>
+            <p>fri</p>
+          </div>
+          <div>
+            <div class="chart6 chart"></div>
+            <p>sat</p>
+          </div>
+          <div>
+            <div class="chart7 chart"></div>
+            <p>sun</p>
+          </div>
+        </div>
+        <hr>
+        <div class="box2-bottom">
+          <div class="box2-bottom-left">
+          <p>Total this month</p>
+          <h1>$478.33</h1>
+          </div>
+          <div class="box2-bottom-right">
+            <h6>+2.4%</h6>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<script src="./scrits.js"></script>
+</body>
+</html>
